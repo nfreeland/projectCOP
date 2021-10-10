@@ -1,0 +1,2 @@
+-- Only run this during our personal testing phase
+--  I think we leave the tables up for him to work with
