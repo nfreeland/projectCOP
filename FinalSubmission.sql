@@ -13,7 +13,8 @@ DESC Test;
 DESC Design;
 DESC Research;
 
-@Queries;
-
+-- Populate the tables
 @PopulateTables;
-@TestTables;
+
+-- Run queries
+@Queries;
