@@ -11,7 +11,7 @@ DROP TABLE Sample;
 DROP Table Design;
 
 -- Drop the parent tables
-DROP TABLE Firm;
 DROP TABLE Project;
 DROP TABLE Lab;
 DROP TABLE Equipment;
+DROP TABLE Firm;
