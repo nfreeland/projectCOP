@@ -66,7 +66,7 @@ FOREIGN KEY (equipment_name) REFERENCES Equipment(equipment_name)
 -- Test()
 CREATE TABLE Test(
 lab_number NUMBER(3) NOT NULL PRIMARY KEY,
-sample_id NUMBER(3)
+sample_id NUMBER(3),
 FOREIGN KEY (lab_number) REFERENCES Lab(lab_number),
 FOREIGN KEY (sample_id) REFERENCES Sample(sample_id)
 );
