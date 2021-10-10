@@ -4,7 +4,6 @@
  -- Drop tables with foreign key
  --  references first
 DROP TABLE Station;
-DROP TABLE Equipment;
 DROP TABLE Holds;
 DROP TABLE Test;
 DROP TABLE Research;
@@ -15,3 +14,4 @@ DROP Table Design;
 DROP TABLE Firm;
 DROP TABLE Project;
 DROP TABLE Lab;
+DROP TABLE Equipment;
