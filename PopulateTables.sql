@@ -1,0 +1,1 @@
+-- Populate each table with the necessary data
