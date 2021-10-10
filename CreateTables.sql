@@ -50,7 +50,7 @@ FOREIGN KEY (firm_name) REFERENCES Firm(firm_name)
 
 -- Equipment(Equipment_Name, Equipment_designation, Firm_Name)
 CREATE TABLE Equipment(
-equiment_name VARCHAR2(16) NOT NULL PRIMARY KEY,
+equipment_name VARCHAR2(16) NOT NULL PRIMARY KEY,
 equipment_designation VARCHAR2(16) -- or NUMBER(8) ?
 firm_name VARCHAR2(64),
 FOREIGN KEY (firm_name) REFERENCES Firm(firm_name)
@@ -60,7 +60,7 @@ FOREIGN KEY (firm_name) REFERENCES Firm(firm_name)
 CREATE TABLE Holds(
 location_id NUMBER(3) NOT NULL PRIMARY KEY,
 equipment_name VARCHAR2(16),
-FOREIGN KEY (equiment_name) REFERENCES Equipment(equipment_name)
+FOREIGN KEY (equipment_name) REFERENCES Equipment(equipment_name)
 );
 
 -- Test()
