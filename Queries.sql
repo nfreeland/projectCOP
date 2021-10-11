@@ -28,3 +28,10 @@ WHERE E.Equipment_Name=H.Equipment_Name
 AND rownum<11
 -- From this query we expect to get the Equipment Designation for the first 10 results of equipment that is being Held
 ;
+
+SELECT Lab_Number, Lab_Phone
+FROM Lab
+WHERE Lab_Number<11
+ORDER BY Lab_Number
+-- From this query we expect to get the lab phone number for the first 10 labs orbered by lab number
+;
