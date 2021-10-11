@@ -35,3 +35,12 @@ WHERE Lab_Number<11
 ORDER BY Lab_Number
 -- From this query we expect to get the lab phone number for the first 10 labs orbered by lab number
 ;
+
+SELECT s.gps_coords
+FROM Station s, Project p
+WHERE s.project_name = p.project_name
+AND s.project_name LIKE '%ENV'
+AND s.principle_investigator = 'Charlie'
+-- From this query we expect to get the station coordinates where the principle investigator
+--  for the project was Charlie and the type of project involved environmental work
+;
