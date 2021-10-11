@@ -1,4 +1,4 @@
-SELECT Sample_Code
+SELECT S.Sample_Code
 FROM Sample S, Test T
 WHERE S.sample_id=T.sample_ID
 AND T.Lab_number<10
