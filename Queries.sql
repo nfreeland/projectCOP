@@ -10,4 +10,7 @@ FROM Holds h, Equipment e
 WHERE b.equipment_name = e.equipment_name
 AND b.equipment_name LIKE '%OMatic%'
 ORDER BY location_id
+-- From this query we expect to get an ordered
+--  list of location ids which use some type of
+--  OMatic equipment
 ; 
