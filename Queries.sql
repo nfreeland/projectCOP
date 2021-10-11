@@ -28,3 +28,11 @@ WHERE E.Equipment_Name=H.Equipment_Name
 AND rownum<11
 -- From this query we expect to get the Equipment Designation for the first 10 results of equipment that is being Held
 ;
+
+SELECT s.gps_coords
+FROM Station s, Project p
+WHERE s.project_name = p.project_name
+AND s.project_name LIKE '%ENV'
+AND s.principle_investigator = 'Charlie'
+-- From this query we expect to get the station coordinates where the principle investigator
+--  for the project was Charlie and the type of project involved environmental work
